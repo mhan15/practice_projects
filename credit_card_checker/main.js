@@ -50,6 +50,24 @@ const onlyUnique = (value, index, self) => {
     return self.indexOf(value) === index;
 }
 
+// random card number generator
+const randomCardNumberGenerator = () => {
+    // get random number of digits of the card number between 15 and 16
+    let numberOfDigits = Math.floor(Math.random() * (16 - 15 + 1) + 15);
+
+    // get random first digit of the card number between 3 and 6
+    let firstDigits = Math.floor(Math.random() * (6 - 3 + 1) + 3);
+
+    // generate card number
+    let cardNumber = [];
+    cardNumber[0] = firstDigits;
+    for(i = 1; i < numberOfDigits; i++){
+        cardNumber[i] = Math.floor(Math.random() * 10);
+    }
+
+    return cardNumber
+}
+
 // =========================== UTILITY FUNCTIONS ENDS =====================================
 
 const validateCred = (array) => {
@@ -114,10 +132,6 @@ const idInvalidCardCompanies = (invalidCardsArray) => {
 }
 
 
-// console.log(validateCred(valid1));
-// console.log(validateCred(invalid1));
-
-// console.log(idInvalidCardCompanies(findInvalidCards([invalid1,invalid1,invalid2,invalid2,invalid3,invalid3])));
 
 
 
