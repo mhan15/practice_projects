@@ -50,6 +50,18 @@ const onlyUnique = (value, index, self) => {
     return self.indexOf(value) === index;
 }
 
+//convert a string of numbers into array
+const numberStringToArray = (string) => {
+    
+    let stringArray = string.split('');
+    let numberArray = [];
+    for(num of stringArray){
+        numberArray.push(num =+ num);
+    }
+
+    return numberArray
+}
+
 // random card number generator
 const randomCardNumberGenerator = () => {
     // get random number of digits of the card number between 15 and 16
