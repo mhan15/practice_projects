@@ -117,7 +117,7 @@ const idInvalidCardCompanies = (invalidCardsArray) => {
 // console.log(validateCred(valid1));
 // console.log(validateCred(invalid1));
 
-console.log(idInvalidCardCompanies(findInvalidCards([invalid1,invalid1,invalid2,invalid2,invalid3,invalid3])));
+// console.log(idInvalidCardCompanies(findInvalidCards([invalid1,invalid1,invalid2,invalid2,invalid3,invalid3])));
 
 
 
