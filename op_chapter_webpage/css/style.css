@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.highlight {
+  color: #ffb300;
+  font-weight: bold;
+}
+
+.btn-submit {
+  background: #ffb300;
+  border: none;
+  height: 35px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* header */
+header {
+  background: #0549a5;
+  color: #ffffff;
+  padding-top: 0px;
+  min-height: 70px;
+  border-bottom: #ffb300 solid 3px;
+}
+
+header ul {
+  margin: 0;
+  padding-top: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+header a:hover {
+  color: #dfd500;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header li:hover {
+  background: #00b9ff;
+}
+
+header #branding {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header #branding img {
+  width: 100px;
+  margin: 0;
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+/* showcase */
+#showcase {
+  min-height: 450px;
+  background: url("../img/showcase.jpg") no-repeat 0 -250px;
+  text-align: center;
+  color: #c94596;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px beige;
+}
+
+#showcase q {
+  margin-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 2px 2px 2px beige;
+}
+
+#showcase p {
+  text-align: right;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 10px;
+  margin-right: 100px;
+  text-shadow: 2px 2px 2px beige;
+}
+
+/* newsletter */
+#newsletter {
+  background: #0549a5;
+  color: #ffffff;
+  padding: 15px;
+}
+
+#newsletter h2 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  padding: 15px;
+}
+
+#newsletter input {
+  height: 35px;
+  width: 250px;
+  padding: 4px;
+}
+
+/* cards */
+#cards {
+  margin-top: 20px;
+}
+
+.card {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.card img {
+  width: 108px;
+}
+
+/* chapter summary */
+#chaptersummary {
+  background: #f9f9f9;
+  padding: 30px;
+  border-top: #ffb300 solid 2px;
+  text-align: center;
+}
+
+#chaptersummary input {
+  height: 35px;
+  width: 250px;
+  padding: 4px;
+}
+
+#chapter-num {
+  font-style: italic;
+}
+
+#chapter-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#chaptersummary img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+}
+
+#summary {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+#summary-para {
+  text-align: left;
+}
+
+/* footer */
+footer {
+  background: #ffb300;
+  min-height: 60px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #cards .card,
+  #summary {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
