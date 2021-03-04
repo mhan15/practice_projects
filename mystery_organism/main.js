@@ -81,7 +81,7 @@ const pAequorGenerator = (n) => {
   let number = 1;
   let pool = [];
   let currentSpecimen = {};
-  while(number <= n || number === 200){
+  while(number <= n && number <= 200){
     currentSpecimen = pAequorFactory(number, mockUpStrand());
     if(currentSpecimen.willLikelySurvive){
       pool.push(currentSpecimen);
